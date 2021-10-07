@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../axios';
-
+import '../css/Row.css';
 
 export default function Row({ title, fetchUrl }) {
     const [movies, setMovies] = useState([]);
@@ -24,7 +24,7 @@ export default function Row({ title, fetchUrl }) {
                     movies&&
                     movies.map((movie) =>(
                         <img 
-                            className='row_poster' 
+                            className='row__poster' 
                             src={`${base_url}${movie.poster_path}`} 
                             alt={movie.name} 
                         />
