@@ -4,7 +4,7 @@ import './App.css';
 import requests from './request';
 
 function App() {
-  
+  // console.log(`${process.env.REACT_APP_API_KEY}`)
   return (
     <div className="App">
       <h1>Welcome To Netflix: </h1>
