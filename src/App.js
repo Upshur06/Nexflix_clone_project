@@ -3,14 +3,14 @@ import Row from './components/Row';
 import './App.css';
 import requests from './request';
 import { Banner } from './components/Banner';
+import { Nav } from './components/Nav';
 
 function App() {
   // console.log(`${process.env.REACT_APP_API_KEY}`)
   return (
     <div className="App">
-      {/*Navbar*/}
+      <Nav />
       <Banner />
-
 
       <Row title='NETFLIX ORIGINALS' fetchUrl={requests.fetchNexflixOriginals} isLargeRow='true' />
       <Row title='Trending Now' fetchUrl={requests.fetchTrending} />

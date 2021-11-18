@@ -1,0 +1,32 @@
+.nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_black{
+    background-color: #111;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+#nexflixlogo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    object-fit: contain;
+
+}
+#avatar{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    object-fit: contain;
+    /* margin-right: 5px; */
+}
